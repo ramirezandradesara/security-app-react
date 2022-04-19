@@ -17,7 +17,6 @@ export default function UseState({ name }) {
     confirmed: false,
   })
 
-  console.log(state);
 
   // estados semideclarativos
   const onConfirm = () => {
