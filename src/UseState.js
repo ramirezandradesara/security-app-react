@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 const SECURITY_CODE = '123'
 
 export default function UseState({ name }) {
-  // estaods independientes o siples: tenemos un actualizador por cada uno, a diferencia de class components
+  // estados independientes o simples: tenemos un actualizador por cada uno, a diferencia de class components
   const [value, setValue] = React.useState('')
   const [error, setError] = React.useState(false)
   const [loading, setLoading] = React.useState(false)
@@ -19,7 +19,7 @@ export default function UseState({ name }) {
 
   console.log(state);
 
-  // código declarativo
+  // estados semideclarativos
   const onConfirm = () => {
     setState({
       ...state,
